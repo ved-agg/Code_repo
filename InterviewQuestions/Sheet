@@ -1,0 +1,309 @@
+OSTTRA
+_______
+Student(name, List<Course>)
+
+
+Course -> name, duration
+
+final Student(){
+private name;
+private List<Course>;
+
+
+public Course(){
+private name;
+private duration
+
+}
+
+Student s1 = new Student(name, );
+
+exception 
+creating class immutable
+abstract class constructor call
+put/post/patch
+hashmap
+----------------------------------------------------------------
+Global logics:
+______________
+oops concept (how can we override)
+how does encapsulation implement?
+multithreading 
+ 1) how many ways to instantiate thread
+ 2) Thread and Runnable and callable difference
+ 3) how to call thread
+ 4) how does start() works and run executes
+String - why it is immutable 
+String pool
+abstract class
+difference b/w Stringbuffer and StringBuilder
+HashSet
+ArrayList and LinkedList
+Stream
+Type of Streams - byte/Char stream
+Type of functional interface
+
+Code: Oddnum
+swap without 3rd variable
+Employee class- find emp below age of 30
+if emp age is same add the salary
+
+
+emp[{"a",30, 10000}, {"b", 30, 20000}, {"c", 32,5000}]
+
+resulting - 30 - 30000
+            32 - 5000
+            39 - 6000
+
+employee.stream().filter(emp->emp.getAge()<30).collect(Collections.toList());
+----------------------------------------
+LTImindTree
+_______________________
+
+ExecutorService/CompletableFuture(Async call)
+Chaching
+Make microservice Scalable what design pattern we use
+To make application abuse free and fault tolerance what design pattern or functionality u will use in springboot
+circuit breaker
+how micro service will communicate
+how to implement authorization and authentication 
+Stream api how it is useful
+types of functionalInterface (Consumer, predicate, function, supplier)
+observer design pattern
+microservice architect
+diff b/w intermediate/terminate function
+------------------------------------------------
+
+LTImindTree round 2
+
+Microservice - project architecture
+Authorization/authentication
+gatewayId
+how are you interacting with other microservice
+circuit breaker write code
+difference put/post why we use put when we can have update via post
+Optional in java
+reflection
+access modifiers (private/protected)
+synchronized and how we can implement
+Annotation you have used
+@transactional
+@bean why do we need bean
+Oops concept 
+how to achieve abstraction
+Volatile 
+service registry
+list and arrayList
+
+--------------------------------------------------
+TCS java/j2ee 
+________________________
+
+ways to create object
+deep and shallow copy
+why string is immutable
+jpa and hibernate
+SQL/NoSQL
+Class.forName v/s creating new operator
+Async call - CompletableFuture
+How to create threadpoll and on what factor pool size is decided
+Atomic and volatile
+Semaphore
+locks / wait
+how to handle deadlock
+Code -- custome linkedList
+Code -- filter based on salary > 5k , sort based on name , assign list to map key = emp id value = empobj
+Builder ds
+Decorative ds with psudo code
+ 
+------------------------------
+map v/s flat map(Gaurav, deo,(1234,1234)
+how to make api scalable
+@transactional
+3rd api call and block diagram
+validation, authentication
+@sevice,@component
+---------------------------------
+
+Impetus
+___________
+
+How to override equals method
+sort a array using java8
+write singleton and how does it breaks
+restApi for fb login page passing user and pass --- which webmethod to use(get/post)
+ExecutorService
+Completable future
+how threads interact with each other wait/notify/notifyAll 
+Multithreading
+Write code to initialize thread
+Atomic keyword
+@configuration means
+garbage collector: how does it work
+	what happen if I increase the heap memory
+	what happen if I decrease the heap memory
+
+-----------------------------
+Capgemini
+________________________
+write a rest project
+what dependency makes project restful
+oops
+jvm/jdk
+how we write queries in jpa
+can we do join functions by jpa functionality
+
+---------------------------------------------------
+Impetus-2
+_________________________
+
+write a program in java 8 to find missing numbers from array and return missing number array
+table employee
+ 
+Id	FullName	Salary	ManagerId
+1	John Smith	10000	3
+2	Jane Anderson	12000	3
+3	Tom Lanon	15000	4
+4	Anne Connor	20000	
+5	Jeremy York	9000	1
+ 
+Write a query to list employees and their manager names.
+API gateway
+logs 
+multithreading
+transient
+serializable
+
+----------------------------------------------------------
+Triangle
+________________________________
+Column(SQL)/Collection of Integer(JAVA)
+1
+1
+1
+2
+2
+3
+4
+6
+1
+2
+6
+
+Response ==> 1,2,3,4,6,1,2,3,6,1,2,1
+
+try with resource
+DRY
+IdentityHashMap
+Segment locking
+
+-------------------------------------------------------------------------
+GAP
+_________________________________
+simple controller method @RestController and @Service
+
+@RestController
+public class GapExample{
+
+@Autowired
+ServiceClass service;
+
+@GetMapping(value="/data", consumes = MediaType.Application/JSON, produces = MediaType.Application/JSON)
+public String getName(@param{id}){
+
+service.getData();
+}
+
+@Service
+public class ServiceClass{
+ public String getData(){
+	return "Hello GAP";
+}
+
+pathvariable		 /user/{id}
+quaryparam		?12
+
+int array count of even and odd and sum of all elements
+print first duplicates
+
+List<Integer> list= List.of(1,2,3,4,5,5,3,2,3,5,3,3)
+
+list.stream().(i->i%2==0).count();
+list.stream().(i->i%2!=0).count();
+
+list.stream().maptoInt(Integer::intValue).sum();
+//Map<Integer, Integer> map = new HashMap<>();
+
+Set<Integer> set = new HashSet<>();
+Integer num = null;
+for(int i: list){
+	if(!set.add(i))
+		if(num==null)
+			num = i;
+}
+
+circuit breaker
+checked uncheck exception
+when SQLException come and it is of what type
+voilitle
+SingletonClass
+is a relation
+post and put
+idempotent http method
+Steps to deploy java on aws: 
+(java code -> resore create(aws)
+container gateway ecs endpoint enable logging cloud watch proxy enable
+Jenkins job dev, uat and prod)
+
+Spring JPA: add new db how will u do
+@NamedQuery
+how to check performance
+marker Interface
+
+---------------------------------------------------------------------------
+Capgi
+__________________________
+List<Integer> list = List.of(4, 3, 2, 1);
+		int size = list.size();
+		for(int i=0; i<size;i++) {
+			for(int j=i; j<size;j++) {
+				System.out.println(list.get(i));
+			}
+		}
+		
+		String str="Vedanshu Agarwal";
+		String reverse = new StringBuilder(str).reverse().toString();
+		System.out.println(reverse);5
+Concurrent and syncronised hashmap
+blocking queue
+solid principle  
+autoconfig how we can disable 
+Auth token
+bean factory and application context
+executorService
+dockerhub
+-----------------------------------------------------
+Guardian
+___________________________________
+map vs flatmap
+designPattern of springboot microservices
+annotations 
+@transactionalManagement
+@JPA hibernate
+ejb
+
+----------------------------------------------------
+Coforge
+_______________________________________
+max salary of employee
+Fibonacci series
+life cycle of bean
+scope of bean
+how bean gets the memory
+DI and IOC
+call a get method in core java without using spring boot
+how caching works and how to implement in core spring
+hashmap vs hashset
+how session get managed
+
+
