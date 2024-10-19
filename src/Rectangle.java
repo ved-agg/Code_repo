@@ -1,4 +1,3 @@
-
 public class Rectangle {
 //	topLeft:Point
 //	height:int

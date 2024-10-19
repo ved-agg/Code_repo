@@ -1,4 +1,3 @@
-
 public class BankAccount {
 	int time;
 	String accountNumber;
