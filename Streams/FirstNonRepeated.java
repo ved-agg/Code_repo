@@ -1,5 +1,3 @@
-package Streams;
-
 public class FirstNonRepeated {
 
 	//Given a String, find the first non-repeated character in it using Stream functions?
